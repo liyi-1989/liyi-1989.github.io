@@ -17,5 +17,5 @@ date: 2014-09-23
 2. 用`git remote add origin ...git`加入远程地址
 3. 用`git remote -v`看一下origin都有什么
 
-以后基本就可以照着这么做了。
+以后基本就可以照着这么做了。哦，对了，在git里面粘贴应该用`insert`键。
 
