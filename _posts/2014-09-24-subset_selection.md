@@ -11,6 +11,9 @@ layout: post
 4. 解决方法：第二种是直接的：直接估test error rate，就用validation或者cross-validation的方法。最后比如对不同个数的model算MSE，那后几个（变量个数多了）要是都差不多，怎么办？用one-standard-error rule：算不同模型的MSE的标准差，找最低点的一个标准差里面变量个数最小的那个。
 5. 注：找变量个数最小的当然是为了模型简单。为什么不直接选那个MSE最小的，而去搞个一个标准差里面的某个（变量个数最少的）？是因为不同的data set什么的Vlidation或者CV之类的方法得到的结果不一定一样。但是在一个标准差里找应该就不会太差。
 
+
+所以一句话其实model selection暂时来看还是用fit或者error指标来评判，没啥新东西，只不过指标有所不同罢了。最终的指标还是test error rate。
+
 ccorknn的程序改了一下，貌似就是一个dimension搞错了。把1变成2就好了，就从单减变成单增了，好神奇。
 
 
