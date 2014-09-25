@@ -12,3 +12,23 @@ layout: post
 5. 注：找变量个数最小的当然是为了模型简单。为什么不直接选那个MSE最小的，而去搞个一个标准差里面的某个（变量个数最少的）？是因为不同的data set什么的Vlidation或者CV之类的方法得到的结果不一定一样。但是在一个标准差里找应该就不会太差。
 
 ccorknn的程序改了一下，貌似就是一个dimension搞错了。把1变成2就好了，就从单减变成单增了，好神奇。
+
+
+<style TYPE="text/css">
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
+    }
+});
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
