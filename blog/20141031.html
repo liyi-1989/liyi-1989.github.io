@@ -53,25 +53,26 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 <center> <h1>
-Mathematics
+2014年10月31日
 </h1> </center>
 <center> <h4>
-<a href="../index.html">back to homepage</a>
+<a href="index.html">back to blog</a>
 </h4> </center>
 
 
-
-<div id="daily-thought" class="section level3">
-<h3>[Daily thought]</h3>
+<p>今天学到的东西</p>
 <ul>
-<li><a href="20141203.html">2014.12.03</a> github collaboration</li>
-<li><a href="20141101.html">2014.11.01</a> videolecture, tree model</li>
-<li><a href="20141031.html">2014.10.31</a> sunpinyin “que, qiong” problem, remote desktop</li>
-<li><a href="20141030.html">2014.10.30</a> install ubuntu, ssh file transfer</li>
-<li><a href="20141029.html">2014.10.29</a> Matlab <code>addpath</code>, measure</li>
-<li><a href="20141028.html">2014.10.28</a> first post</li>
+<li><p>今天发现sunpinyin有问题，打que和qiong之类的都出不来正确的结果。网上搜了一下发现是普遍情况。解决的方法是<a href="http://forum.ubuntu.org.cn/viewtopic.php?t=460618">下载新的包</a>。现在终于知道不把自己逼到只有ubuntu是不能学会的道理了。</p></li>
+<li><p>可以在Nautilus（ubuntu的文件管理器）下按Ctrl + H来显示隐藏文件。</p></li>
+<li><p>远程桌面登陆的话用Remotedesktop Client这个软件，登陆myapps1.nunet.neu.edu学校的myapps。</p></li>
+<li>开始用knitr pdf的时候编译不了，说是字体啊什么的问题。解决的方法是：
+<ul>
+<li><a href="http://www.omegahat.org/RCurl/FAQ.html">step 1</a>: sudo apt-get install libcurl4-openssl-dev 为了安装RCurl。</li>
+<li><a href="http://stackoverflow.com/questions/25856362/pandoc-document-conversion-failed-with-error-43-pdflatex-the-memory-dump-file">step 2</a>: devtools::install_github(“rstudio/rmarkdown”) 更新rmarkdown package。 当然，要安装devtools。要安装这个就要先安装RCurl，所以有上面一步。</li>
+<li><a href="http://tex.stackexchange.com/questions/75166/error-in-tex-live-font-not-loadable-metric-tfm-file-not-found">step 3</a>: sudo apt-get install texlive-fonts-recommended当然了，也很有可能就是这个命令有用。不管了，反正这样弄完了可以knit pdf了。</li>
+</ul></li>
 </ul>
-</div>
+<p>每天都觉得是在混日子啊，做一些无关紧要的东西。什么时候可以学点有用的啊，现在发现学到了现在去工作还是什么都不会。学数学真的什么也干不了啊。</p>
 
 
 </div>

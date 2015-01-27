@@ -53,25 +53,24 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 <center> <h1>
-Mathematics
+2014年10月29日
 </h1> </center>
 <center> <h4>
-<a href="../index.html">back to homepage</a>
+<a href="index.html">back to blog</a>
 </h4> </center>
 
 
-
-<div id="daily-thought" class="section level3">
-<h3>[Daily thought]</h3>
+<p>今天学到的东西</p>
 <ul>
-<li><a href="20141203.html">2014.12.03</a> github collaboration</li>
-<li><a href="20141101.html">2014.11.01</a> videolecture, tree model</li>
-<li><a href="20141031.html">2014.10.31</a> sunpinyin “que, qiong” problem, remote desktop</li>
-<li><a href="20141030.html">2014.10.30</a> install ubuntu, ssh file transfer</li>
-<li><a href="20141029.html">2014.10.29</a> Matlab <code>addpath</code>, measure</li>
-<li><a href="20141028.html">2014.10.28</a> first post</li>
+<li><p>今天了解一个Matlab的命令： <code>addpath('./equitability-code/')</code> 是把文件夹加入到工作路径中去了，这样里面的函数就可以直接调用。相对的rmpath是删去某个路径，用法一样。</p></li>
+<li><p>这几天开始看The elements of integration这本书，复习一下实变函数。每次看都有新的体会，之前学得太不扎实了。上一次看是理解到了测度的概念，或者说是勒贝格测度和勒贝格-斯蒂阶测度的理解。基本上就是物理上的密度的概念。虽然都是一条直线，但是每个点的（密度）值不同，所以是个二维的图像，即用一个函数<span class="math">\(f(x)\)</span>，也就是所谓的概率密度函数（在线段上的积分）来表示每个线段的长度（或者密度）。与此对应的就是单调递增<span class="math">\(F(x)\)</span>在两个端点的差，一个道理。</p></li>
+<li><p>这次理解到的关于测度的是为什么它是一个集函数，是不是它其实也只是普通的函数？不是。如果是普通函数，一个数有一个值，而集函数，一个集合有一个值（表示集合的大小），这个值并不是每个点的拼凑，不是像是取原像似的有好多点的组合而已。这个值，是集合的属性，也就是说一个集合才能谈论它的大小。所以它的取值点是集合，所以定义域是集合的collection，是<span class="math">\(\sigma\)</span>代数。</p></li>
+<li><p>这就导致了一个问题，集函数和函数表示上的区别。函数是没有冗余信息的，给定<span class="math">\(x\)</span>，我们算<span class="math">\(f(x)\)</span>的值。一个<span class="math">\(x\)</span>算完了，算下一个<span class="math">\(x\)</span>的值。但是集函数不一样，它有很多的冗余信息，因为好多集合都是overlap的，我们要在每个集合上都定义它的值。所以这就很浪费定义，同时也容易不consistency。所以这就涉及到了如何定义测度。答案就是<span class="math">\(\sigma\)</span>可加性的那些定义。</p></li>
+<li><p>今天知道了那个MI的那个binary的文件是不能在Windows上运行的，所以要在MAC或者Linux下面才能运行。</p></li>
+<li><p>用SSH登录了同学的机器，129.10.53.230。用Windows登录后要想出Matlab的GUI，貌似要开着什么Xming，然后Putty里选上x11之类的东西。不知道是什么东西，但是成功了。目的是为了解决上面的问题。</p></li>
 </ul>
-</div>
+<p>下午去开了那个会，<a href="http://www.northeastern.edu/synchrony/">Tarik</a> 给我们做了他们海洋生物学的报告。貌似是每个PI轮着做报告。希望能有点什么进展吧。</p>
+<p>之后又讨论了一下那个feature selection的paper具体怎么做simulation。晚上本来想回家的，结果到了Mass Ave那站就停车了，因为什么medical reason。所以乘客就都下了车，我回学校吃的。</p>
 
 
 </div>

@@ -1,0 +1,29 @@
+---
+output: html_document
+---
+
+<center> <h1>2014年11月01日</h1> </center>
+<center> <h4>[back to blog](index.html)</h4> </center>
+
+
+今天学到的东西
+
+- 在videolecture上面的几个相关的视频，包括那个HSIC的作者和那个日本人的。上面有用的东西还是不少的。
+
+- 这两天看了树模型。对于回归树，生成一颗大树的方法就是循环依次挨个试每个变量和每个可能的cutoff值，选让square error最小的那个情况，然后接着循环。当然这个还没完，因为大树会overfit training data。剪枝的方法先想到的是RSS减小过了一个阈值才真的再分。但是这样比较有短见，也许现在效果不好，不该分，但是要是分了以后就会更好。所以就要别的方法剪枝：cost complexity pruning。其实就是和Lasso一样，加上一个k倍的惩罚项，然后cross validation那个参数k。
+
+- 分类树，就是判别标准不再是每类的均值了（因为这样对qualitative变量不可行），而是用出现频率最高的那个估。评判标准也不同，一个是classification error rate，但这个对树增长不敏感。平时还用Gini index或者cross-entropy，目的是估每个节点区域纯不纯。两者差不多，就是泰勒展开的区别。
+
+- 树的效果不好，要Bagging，就是Boostrap一堆sample，然后分别fit一个树最后取平均。
+
+- Random Forest就是Bagging，只不过多考虑一步。Bagging时是和原本同样的多的feature数p。这里考虑到容易相关性大的feature容易出现多次，导致每次fit出来的树相关性很大，这样多次求平均就不能减小方差。基于这个事实，Random Forest就是把Bagging时的feature数减小。R里面默认的是回归树取p/3，分类树取$\sqrt{p}$。
+
+- Bagging在平均意义下用2/3的点，所以剩下的点可以天然的用来做test set（而不用额外的做cv），叫做out-of-bag error。
+
+- Boosting是不断的fit residual。然后fit出来新的值，乘个系数从residual里面减下去再接着fit。所以，这个系数，fit树用多少个feature，不断fit多少次，这三个量是tuning parameters。
+
+- python 里面用`who`或者`whos`查看当前变量和module。
+
+明天爸妈就来了。我觉得我似乎还没有准备好。乱。不知道一年之后还有没有人和我说呵呵。
+
+11/02/14 夜。

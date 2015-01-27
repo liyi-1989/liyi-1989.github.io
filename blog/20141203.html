@@ -53,25 +53,50 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 <center> <h1>
-Mathematics
+2014年12月03日
 </h1> </center>
 <center> <h4>
-<a href="../index.html">back to homepage</a>
+<a href="index.html">back to blog</a>
 </h4> </center>
 
-
-
-<div id="daily-thought" class="section level3">
-<h3>[Daily thought]</h3>
+<p>今天主要和亚乐初步搞明白了github上面怎么共同协作。说初步是因为没有涉及到branch，只是master之间的沟通。有些东西还是自己理解了之后才能运用，自己理解的方式和书上讲的还是有很大差别的，或者说这个东西就没什么书讲。</p>
 <ul>
-<li><a href="20141203.html">2014.12.03</a> github collaboration</li>
-<li><a href="20141101.html">2014.11.01</a> videolecture, tree model</li>
-<li><a href="20141031.html">2014.10.31</a> sunpinyin “que, qiong” problem, remote desktop</li>
-<li><a href="20141030.html">2014.10.30</a> install ubuntu, ssh file transfer</li>
-<li><a href="20141029.html">2014.10.29</a> Matlab <code>addpath</code>, measure</li>
-<li><a href="20141028.html">2014.10.28</a> first post</li>
+<li>两个人协作，两个身份，领导和小弟。每个人又有两个地方，本地电脑和远程托管地。所以，一共涉及四个地方：
+<ol style="list-style-type: decimal">
+<li><strong>领导的本地</strong>：首先，领导在自己的电脑上搞点初始的</li>
+<li><strong>领导的远程</strong>：然后，领导把开始工作传到（领导的）远程（比如github）</li>
+<li><strong>小弟的远程</strong>：接着，小弟从（小弟的）远程folk领导的远程</li>
+<li><strong>小弟的本地</strong>：最后，小弟从自己的远程clone到自己的本地</li>
+</ol></li>
+<li><p>以上共同开发的环境就创建好了。也就是说，四个地方的文件都同步好了。注意领导与小弟的沟通是通过远程的folk来实现的（当然private repo的话，领导要先share给小弟）。</p></li>
+<li>对于以上四个节点，<strong>小弟</strong>需要关心的有三个：<strong>领导的远程</strong>，<strong>小弟的远程</strong>，<strong>小弟的本地</strong>。工作流程为：
+<ol style="list-style-type: decimal">
+<li>（从领导那）接活：<strong>领导的远程</strong>–pull–&gt;<strong>小弟的本地</strong><code>小弟本地直接从领导那接活，那小弟远程还有用么？</code></li>
+<li>保存到自己的远程：<strong>小弟的本地</strong>–push–&gt;<strong>小弟的远程</strong></li>
+<li>（往领导那）交活：<strong>小弟的远程</strong>–pull request–&gt;<strong>领导的远程</strong><code>有用，小弟通过小弟远程来交活（pull request）</code>【本质：小弟不能直接push到领导那】</li>
+</ol></li>
+<li>对于以上四个节点，<strong>领导</strong>需要关心的有三个： <strong>小弟的远程</strong>，<strong>领导的远程</strong>，<strong>领导的本地</strong>。工作流程为：
+<ol style="list-style-type: decimal">
+<li>（从小弟那）收活：<strong>小弟的远程</strong>–被merge–&gt;<strong>领导的远程</strong></li>
+<li>【若上一步无冲突】保存到自己的本地：<strong>领导的远程</strong>–pull–&gt;<strong>领导的本地</strong></li>
+<li>【若上一步有冲突】保存到自己的本地：<strong>小弟的远程</strong>–pull–&gt;<strong>领导的本地</strong>（手动修改冲突）</li>
+<li>至此，领导的本地是最新版本的文件。</li>
+</ol></li>
+<li><p>以此类推。</p></li>
+<li>其实说简单也简单，真正干起活来，就是：
+<ol style="list-style-type: decimal">
+<li>pull最新文件【<strong>领导的远程</strong>–&gt;<strong>小弟的本地</strong>】（用git）</li>
+<li>要有冲突解决冲突【<strong>小弟的本地</strong>】（在干活，吸取别人新代码）</li>
+<li>自己写代码【<strong>小弟的本地</strong>】（在干活，自己写代码）</li>
+<li>push到自己的远程【<strong>小弟的本地</strong>–&gt;<strong>小弟的远程</strong>】（用git）</li>
+<li>pull request交活【<strong>小弟的远程</strong>–&gt;<strong>领导的远程</strong>】（用git） 这么几件事。</li>
+</ol></li>
+<li>一点总结：
+<ul>
+<li>想pull，谁都能pull谁。</li>
+<li>想push，（自己当然都能push自己），领导没必要push给小弟，小弟不能push给领导（要通过send pull request）。</li>
+</ul></li>
 </ul>
-</div>
 
 
 </div>

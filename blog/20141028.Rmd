@@ -1,0 +1,18 @@
+---
+output: html_document
+---
+
+<center> <h1>2014年10月28日</h1> </center>
+<center> <h4>[back to blog](index.html)</h4> </center>
+
+一直都想在数学系的主页搞一个自己的homepage，但是一直都不知道去找谁弄。虽然有个sponsor account，昨天才知道竟然也是有时间限制的，最多只有半年，快到期了还要更新。正好那天参加系里面的town hall meeting，我得知系里面的服务器是Gouri维护的。所以，我就让他帮我申请了一个帐号。
+
+这是我在数学系主页发的第一个文章。当然，主要的目的就是记录一下登录的地址mathserver.neu.edu/~li。虽然这个是最直接的地址，不过我还是更喜欢这个[www.math.neu.edu/~li](http://www.math.neu.edu/~li)，这个看起来更官方一些。
+
+登录的地址是129.10.68.74。其实一直在纠结在哪里写博客，用什么工具写。因为会的有限，所以受到的限制比较多。前两天看了[慕课网](http://www.imooc.com)的一些视频后，才慢慢了解html和css的基础知识。同时也学到了Bootstrap的一些代码。之前就很好奇DataRobot和Google Play之类的网站都是差不多样子的，不知道怎么回事。原来都是用的同一个框架。我现在只能改单独一个网页，所以还是不能像Github page一样写完博客自动更新。最后还是决定用R Markdown写，这样一来可以打数学公式和R代码，二来页面能自动生成html格式的文件，三来效果虽然不绚丽但也还算是比较简洁。
+
+今天就大概先说这么多。
+
+夜。
+
+

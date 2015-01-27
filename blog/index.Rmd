@@ -1,0 +1,17 @@
+---
+output: html_document
+---
+
+<center> <h1>Mathematics</h1> </center>
+<center> <h4>[back to homepage](../index.html)</h4> </center>
+
+
+
+### [Daily thought]
+
+- [2014.12.03](20141203.html) github collaboration 
+- [2014.11.01](20141101.html) videolecture, tree model
+- [2014.10.31](20141031.html) sunpinyin "que, qiong" problem, remote desktop 
+- [2014.10.30](20141030.html) install ubuntu, ssh file transfer
+- [2014.10.29](20141029.html) Matlab `addpath`, measure 
+- [2014.10.28](20141028.html) first post

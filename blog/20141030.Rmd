@@ -1,0 +1,19 @@
+---
+output: html_document
+---
+
+<center> <h1>2014年10月30日</h1> </center>
+<center> <h4>[back to blog](index.html)</h4> </center>
+
+
+今天学到的东西
+
+- 昨天晚上看了一下RStudio里面的project文件到底是什么。其实就是一个工作区，貌似适合不同project之间的切换。不至于工作区里面乱七八糟什么都有。哦，对了他可以用git。
+
+- 早上本来想把windows的磁盘拿出来一点给ubuntu，结果由于只能支持四个分区，所以分出来的那个没法变成free space。结果我按照网上的方法把所有磁盘都给搞成了dynamic的了。所以启动不了了，没办法，只能重新格式化安装linux了。之前还在U盘上安了一个gpart，也没用了。
+
+- `ssh -X` 就可以进入图形界面了，不过貌似discovery上面的matlab gui太慢了。
+
+- 用ssh copy远程文件用`scp`命令，当然了，我最后因为什么RSA key之类的原因还是没成功。最后安装了FileZilla才弄好的，不过比命令行更方便了。
+
+下周一爸妈就过来了。希望一切都能有转机。

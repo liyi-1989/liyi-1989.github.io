@@ -1,0 +1,25 @@
+---
+output: html_document
+---
+
+<center> <h1>2014年10月31日</h1> </center>
+<center> <h4>[back to blog](index.html)</h4> </center>
+
+
+今天学到的东西
+
+* 今天发现sunpinyin有问题，打que和qiong之类的都出不来正确的结果。网上搜了一下发现是普遍情况。解决的方法是[下载新的包](http://forum.ubuntu.org.cn/viewtopic.php?t=460618)。现在终于知道不把自己逼到只有ubuntu是不能学会的道理了。
+
+* 可以在Nautilus（ubuntu的文件管理器）下按Ctrl + H来显示隐藏文件。
+
+* 远程桌面登陆的话用Remotedesktop Client这个软件，登陆myapps1.nunet.neu.edu学校的myapps。
+
+* 开始用knitr pdf的时候编译不了，说是字体啊什么的问题。解决的方法是：
+    + [step 1](http://www.omegahat.org/RCurl/FAQ.html): sudo apt-get install libcurl4-openssl-dev 为了安装RCurl。
+    + [step 2](http://stackoverflow.com/questions/25856362/pandoc-document-conversion-failed-with-error-43-pdflatex-the-memory-dump-file): devtools::install_github("rstudio/rmarkdown") 更新rmarkdown package。 当然，要安装devtools。要安装这个就要先安装RCurl，所以有上面一步。
+    + [step 3](http://tex.stackexchange.com/questions/75166/error-in-tex-live-font-not-loadable-metric-tfm-file-not-found): sudo apt-get install texlive-fonts-recommended当然了，也很有可能就是这个命令有用。不管了，反正这样弄完了可以knit pdf了。
+  
+
+每天都觉得是在混日子啊，做一些无关紧要的东西。什么时候可以学点有用的啊，现在发现学到了现在去工作还是什么都不会。学数学真的什么也干不了啊。
+  
+  
