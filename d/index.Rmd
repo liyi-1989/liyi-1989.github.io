@@ -1,0 +1,9 @@
+---
+output: html_document
+---
+
+<center> <h1>Dependence Measures</h1> </center>
+<center> <h4>[back to homepage](../index.html)</h4> </center>
+
+
+

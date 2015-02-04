@@ -1,0 +1,36 @@
+---
+output: html_document
+---
+
+<center> <h1>Learning Resources</h1> </center>
+<center> <h4>[back to homepage](../index.html)</h4> </center>
+
+## 1. Mathematics
+
+## 2. Statistics
+
+### [Statistics]
+
+### [Machine Learning]
+
+### [Deep Learning]
+
+## 3. Computer Science
+
+### [Cloud Computing]
+
+### [High Performance Computing]
+
+### [Database]
+
+### [Algorithm and Data Structure]
+
+## 4. Finance
+
+## 0. Social Activity
+
+### [Data Science Company Blogs]
+- [Data Robot](http://www.datarobot.com/blog/)
+
+
+
