@@ -1,0 +1,13 @@
+---
+output: html_document
+---
+
+<center> <h1>2015年05月16日</h1> </center>
+<center> <h4>[back to blog](index.html)</h4> </center>
+
+
+最近写文章得到的一些经验：
+
+- 什么事情都尽量往前赶。你做完实验的时候，你的合作者不一定有时间。所以你干完事需要别人审阅，不是先干完了闲下来了别人就也闲下来了。所以要提前做。
+- 群发邮件meeting，比自己单独做好，还显得你有组织能力。
+- code和data要分开放。这样可以把code提交到github上去而data不用。都混在一起没法提交github，太大了。

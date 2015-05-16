@@ -12,6 +12,7 @@ output: html_document
 
 ### [Daily thought]
 
+- [2015.05.16](20150516.html) recent tips for writing paper
 - [2014.12.03](20141203.html) github collaboration 
 - [2014.11.01](20141101.html) videolecture, tree model
 - [2014.10.31](20141031.html) sunpinyin "que, qiong" problem, remote desktop 
